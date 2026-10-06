@@ -1,0 +1,52 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puckGroundSensors.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.2400656002232101 0.40760274086719145 0.8810383154137071 1.1785461291780637
+  position 0.18948464312608138 -0.37396478144362266 0.18821698032322673
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0.03 0
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "track.png"
+        ""
+        ""
+      ]
+    }
+    roughness 1
+    metalness 0
+  }
+}
+E-puck {
+  hidden position_0_0 156.91387335381987
+  hidden position_0_1 178.371788882011
+  hidden linearVelocity_0 0.015070232401257393 0.04788053643742873 6.734784060786988e-05
+  hidden angularVelocity_0 0.002792674047823134 -0.0008550941575888449 3.1945364105725217e-06
+  hidden rotation_1 0 1 0 6.117425981509791
+  hidden linearVelocity_1 0.01506595388817467 0.047866575230717356 6.808164957647841e-05
+  hidden angularVelocity_1 -2.393328633730464 0.7532978602756449 -3.52909919382714e-06
+  hidden rotation_2 0 1 0 2.4426002809825818
+  hidden linearVelocity_2 0.015065959357296826 0.04786656984720686 6.666329620821298e-05
+  hidden angularVelocity_2 -2.39332864910774 0.7532978109521147 -3.6597491382142164e-06
+  translation 0.3348816838829053 0.0555537144070345 -7.256855202898531e-05
+  rotation 0.00046879807961225367 -0.0006430002298382277 0.9999996833894824 1.2658752378800016
+  controller "line_follower"
+  groundSensorsSlot [
+    E-puckGroundSensors {
+    }
+  ]
+}
