@@ -43,10 +43,10 @@ worlds/
 
 ## Roadmap
 
-- [x] **Week 1:** Webots basics, obstacle avoidance, line following
-- [ ] **Week 2:** Custom differential-drive robot with lidar and camera; colour detection with OpenCV
-- [ ] **Week 3:** ROS 2 integration (`webots_ros2`), RViz2, SLAM Toolbox mapping
-- [ ] **Week 4:** Warehouse world with autonomous pickup and delivery using Nav2
+- Week 1:Webots basics, obstacle avoidance, line following
+- Week 2:Custom differential-drive robot with lidar and camera; colour detection with OpenCV
+- Week 3:ROS 2 integration (`webots_ros2`), RViz2, SLAM Toolbox mapping
+- Week 4:Warehouse world with autonomous pickup and delivery using Nav2
 
 ## Tech
 
